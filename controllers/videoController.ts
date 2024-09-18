@@ -3,8 +3,10 @@ import { validationResult } from 'express-validator';
 import { uuid } from 'uuidv4';
 import ffmpeg from 'fluent-ffmpeg';
 import {Video} from "../types/video";
+import multer from 'multer';
 
 let videos: Video[] = [];
+
 
 // Upload Video
 export const uploadVideo = (req: Request, res: Response) => {

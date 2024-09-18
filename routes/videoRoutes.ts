@@ -2,18 +2,21 @@ import { Router } from 'express';
 import { uploadVideo, getVideoDetails, listVideos, deleteVideo, groupVideosByHour } from '../controllers/videoController';
 import multer from 'multer';
 import { body } from 'express-validator';
+import upload from '../multerConfig';
 
 const router = Router();
-const upload = multer({ dest: 'uploads/' });
 
-// Video Upload Route
-router.post(
+
+  
+  // Video Upload Route
+  router.post(
     '/upload',
-    upload.single('video'),
+    upload.single('video'), // Multer middleware
     body('title').notEmpty().withMessage('Title is required'),
     body('description').optional().isString(),
-    uploadVideo
-);
+    uploadVideo // Controller function
+  );
+  
 
 // Get Video Details by ID
 router.get('/:id', getVideoDetails);
