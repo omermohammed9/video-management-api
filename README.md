@@ -88,7 +88,7 @@ This API is designed to serve as a foundational backend service for an OTT (Over
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/video-management-api.git
+   git clone https://github.com/omermohammed9/video-management-api.git
    cd video-management-api
 
 2. **Install dependencies**
