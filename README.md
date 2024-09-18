@@ -20,7 +20,8 @@ This API is designed to serve as a foundational backend service for an OTT (Over
   - [Mandatory Features](#mandatory-features)
   - [Bonus Features](#bonus-features)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites) || [Dependencies](#dependencies)
+  - [Prerequisites](#prerequisites) 
+  - [Dependencies](#dependencies)
   - [Installation](#installation)
 - [API Documentation](#api-documentation)
   - [1. Upload Video](#1-upload-video)
@@ -77,11 +78,13 @@ This API is designed to serve as a foundational backend service for an OTT (Over
 
 ## Getting Started
 
-### Prerequisites && Dependencies
+### Prerequisites
 
 - **Node.js** (version 14 or higher)
 - **npm** (version 6 or higher)
 - **ffmpeg** installed and accessible in your system's PATH.
+
+### Dependencies
 - **express**: ^4.21.0
 - **express-validator**: ^7.2.0
 - **fluent-ffmpeg**: ^2.1.3
@@ -94,6 +97,7 @@ This API is designed to serve as a foundational backend service for an OTT (Over
 - **@types/fluent-ffmpeg**: ^2.1.26
 - **@types/multer**: ^1.4.12
 - **@types/uuid**: ^10.0.0
+
 
 ### Installation
 
