@@ -22,7 +22,6 @@ This API is designed to serve as a foundational backend service for an OTT (Over
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Running the Project](#running-the-project)
 - [API Documentation](#api-documentation)
   - [1. Upload Video](#1-upload-video)
   - [2. Get Video Details](#2-get-video-details)
