@@ -115,7 +115,6 @@ This API provides endpoints to upload, manage, and retrieve metadata about video
   3. [List Videos](#3-list-videos)
   4. [Delete Video](#4-delete-video)
   5. [Group Videos by Hour](#5-group-videos-by-hour)
-- [Example Requests](#example-requests)
 
 ---
 
