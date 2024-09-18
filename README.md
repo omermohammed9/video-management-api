@@ -271,6 +271,35 @@ All endpoints are prefixed with `/api/videos`.
 
 ---
 
+## Assumptions
+
+### 1. In-Memory Data Storage
+
+- **Assumption**: All video metadata (such as title, description, upload date, file size, and video duration) is stored in an in-memory array.
+- **Implication**: This means that data will not persist if the server is restarted. The in-memory storage is intended for demonstration purposes only and is not suitable for production environments. To persist data, a database (such as MongoDB or PostgreSQL) would need to be integrated.
+
+### 2. File Storage
+
+- **Assumption**: Uploaded video files are stored in the `uploads/` directory located on the server.
+- **Implication**: The server must have appropriate file permissions and enough disk space to handle the video uploads. Additionally, no external file storage systems (e.g., AWS S3) are used in this project.
+
+### 3. No Authentication
+
+- **Assumption**: The API does not implement any authentication or authorization mechanisms.
+- **Implication**: All API endpoints are public and accessible without restriction. In a real-world scenario, authentication (e.g., via JWT tokens) should be added to secure the endpoints and restrict access to authorized users only.
+
+### 4. File Validation
+
+- **Assumption**: The API does not validate the file type of the uploaded video.
+- **Implication**: The API will accept any file format without checking whether the uploaded file is a valid video. In a production environment, additional validation logic should be added to ensure that only supported video formats (e.g., MP4, AVI) are accepted.
+
+### 5. Time Zone
+
+- **Assumption**: All dates and times are handled in the server's local time zone.
+- **Implication**: The timestamps for video uploads and other time-related metadata are based on the local time zone of the server running the API. If the API is deployed in different regions or if users from multiple time zones access the API, time zone normalization (e.g., converting to UTC) may be required.
+
+---
+
 ## Project Structure
 
 The following is the directory structure of the **Video Management API** project:
@@ -311,10 +340,7 @@ The following is the directory structure of the **Video Management API** project
 
 ---
 
-This structure ensures that the project is organized, modular, and easy to maintain. Each directory and file has a clear responsibility, which makes it easy to navigate and extend the project.
 
-
-# Video Management API
 
 ## Reasoning Behind Approach
 
