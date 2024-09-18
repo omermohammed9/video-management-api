@@ -314,7 +314,7 @@ The following is the directory structure of the **Video Management API** project
 - **`src/`**:
   - **`controllers/`**: Contains the logic for handling requests and responses. Specifically, `videoController.ts` manages all video-related endpoints, such as uploading, retrieving, listing, deleting, and grouping videos.
   - **`routes/`**: Defines the API routes for the video management functionality. The `videoRoutes.ts` file maps URL endpoints to the respective controller functions.
-  - **`models/`**: Contains TypeScript interfaces and data models used throughout the application. The `video.ts` file defines the structure of the video data used in the project.
+  - **`types/`**: Contains TypeScript interfaces and data models used throughout the application. The `video.ts` file defines the structure of the video data used in the project.
   - **`app.ts`**: The central application configuration file, setting up middlewares, routes, and other configurations.
   - **`server.ts`**: Responsible for starting the Express server and listening for incoming requests.
 
