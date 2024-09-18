@@ -33,10 +33,6 @@ This API is designed to serve as a foundational backend service for an OTT (Over
 - [Project Structure](#project-structure)
 - [Reasoning Behind Approach](#reasoning-behind-approach)
 - [Challenges and Solutions](#challenges-and-solutions)
-- [Future Improvements](#future-improvements)
-- [Dependencies](#dependencies)
-- [Contact](#contact)
-
 ---
 
 ## Features
